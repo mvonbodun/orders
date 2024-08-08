@@ -1,0 +1,23 @@
+[package]
+name = "orders"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.7.5"
+cargo-watch = "8.5.2"
+derive_more = "0.99.17"
+serde = "1.0.202"
+serde_json = "1.0.117"
+tokio = { version = "1", features = ["full"] }
+async-trait = "0.1"
+mongodb = "3"
+uuid = "1.10"
+bson = "2.11"
+thiserror = "1.0"
+dotenvy = "0.15"
+log = "0.4"
+pretty_env_logger = "0.5"
+iso_currency = { version = "0.4", features = ["with-serde"] }
+rust_decimal = "1.35"
+rust_decimal_macros = "1.35"

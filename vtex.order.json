@@ -1,0 +1,368 @@
+{
+    "orderId": "1077241700773-01",
+    "sequence": "505091",
+    "marketplaceOrderId": "",
+    "marketplaceServicesEndpoint": "http://oms.vtexinternal.com.br/api/oms?an=demostore",
+    "sellerOrderId": "00-1077241700773-01",
+    "origin": "Marketplace",
+    "affiliateId": "",
+    "salesChannel": "1",
+    "merchantName": null,
+    "status": "handling",
+    "statusDescription": "Preparando Entrega",
+    "value": 11990,
+    "creationDate": "2020-11-17T20:28:18.7649571+00:00",
+    "lastChange": "2020-12-30T21:28:32.1643974+00:00",
+    "orderGroup": "1077241700773",
+    "totals": [
+        {
+            "id": "Items",
+            "name": "Items Total",
+            "value": 11990
+        },
+        {
+            "id": "Discounts",
+            "name": "Discounts Total",
+            "value": 0
+        },
+        {
+            "id": "Shipping",
+            "name": "Shipping Total",
+            "value": 0
+        },
+        {
+            "id": "Tax",
+            "name": "Tax Total",
+            "value": 0
+        }
+    ],
+    "items": [
+        {
+            "uniqueId": "603F2CE705234C04A98A6E6182E498F4",
+            "id": "58",
+            "productId": "26",
+            "ean": null,
+            "lockId": "00-1077241700773-01",
+            "itemAttachment": {
+                "content": {},
+                "name": null
+            },
+            "attachments": [],
+            "quantity": 1,
+            "seller": "1",
+            "name": "Turquoise Retro Capsule Coffee Maker - 110V",
+            "refId": "73257347",
+            "price": 11990,
+            "listPrice": 11990,
+            "manualPrice": null,
+            "priceTags": [],
+            "imageUrl": "https://demostore.vteximg.com.br/arquivos/ids/155459-55-55/img-1.jpg?v=637211136602230000",
+            "detailUrl": "/turquoise-retro-capsule-coffee-maker/p",
+            "components": [],
+            "bundleItems": [],
+            "params": [],
+            "offerings": [],
+            "sellerSku": "58",
+            "priceValidUntil": null,
+            "commission": 0,
+            "tax": 0,
+            "preSaleDate": null,
+            "additionalInfo": {
+                "brandName": "VTEX",
+                "brandId": "2000000",
+                "categoriesIds": "/152/159/",
+                "categories": [
+                    {
+                        "id": 159,
+                        "name": "Coffee Makers"
+                    },
+                    {
+                        "id": 152,
+                        "name": "Small Appliances"
+                    }
+                ],
+                "productClusterId": "137,138,139,140,141",
+                "commercialConditionId": "1",
+                "dimension": {
+                    "cubicweight": 1,
+                    "height": 10,
+                    "length": 10,
+                    "weight": 10,
+                    "width": 10
+                },
+                "offeringInfo": null,
+                "offeringType": null,
+                "offeringTypeId": null
+            },
+            "measurementUnit": "un",
+            "unitMultiplier": 1,
+            "sellingPrice": 11990,
+            "isGift": false,
+            "shippingPrice": null,
+            "rewardValue": 0,
+            "freightCommission": 0,
+            "priceDefinition": null,
+            "taxCode": "",
+            "parentItemIndex": null,
+            "parentAssemblyBinding": null,
+            "callCenterOperator": null,
+            "serialNumbers": null,
+            "assemblies": [],
+            "costPrice": 12000
+        }
+    ],
+    "marketplaceItems": [],
+    "clientProfileData": {
+        "id": "clientProfileData",
+        "email": "afonsoinfo@gmail.com",
+        "firstName": "Afonso",
+        "lastName": "Carvalho",
+        "documentType": null,
+        "document": null,
+        "phone": "+13055353283",
+        "corporateName": null,
+        "tradeName": null,
+        "corporateDocument": null,
+        "stateInscription": null,
+        "corporatePhone": null,
+        "isCorporate": false,
+        "userProfileId": "0662ce94-9817-48b7-a7d8-42fe327752e3",
+        "customerClass": null
+    },
+    "giftRegistryData": null,
+    "marketingData": {
+        "id": "marketingData",
+        "utmSource": null,
+        "utmPartner": null,
+        "utmMedium": null,
+        "utmCampaign": null,
+        "coupon": null,
+        "utmiCampaign": null,
+        "utmipage": null,
+        "utmiPart": null,
+        "marketingTags": [
+            "vtexSocialSelling"
+        ]
+    },
+    "ratesAndBenefitsData": {
+        "id": "ratesAndBenefitsData",
+        "rateAndBenefitsIdentifiers": []
+    },
+    "shippingData": {
+        "id": "shippingData",
+        "address": {
+            "addressType": "residential",
+            "receiverName": "Afonso Carvalho",
+            "addressId": "4769955873900",
+            "postalCode": "33140",
+            "city": "MIAMI BEACH",
+            "state": "FL",
+            "country": "USA",
+            "street": "4441 Collins Ave, Miami Beach, FL",
+            "number": null,
+            "neighborhood": null,
+            "complement": null,
+            "reference": null,
+            "geoCoordinates": [
+                -80.2,
+                25.77
+            ]
+        },
+        "logisticsInfo": [
+            {
+                "itemIndex": 0,
+                "selectedSla": "Carrier",
+                "lockTTL": "10d",
+                "price": 0,
+                "listPrice": 0,
+                "sellingPrice": 0,
+                "deliveryWindow": null,
+                "deliveryCompany": "Carrier",
+                "shippingEstimate": "12bd",
+                "shippingEstimateDate": "2020-12-03T20:28:33.5851280+00:00",
+                "slas": [
+                    {
+                        "id": "Carrier",
+                        "name": "Carrier",
+                        "shippingEstimate": "12bd",
+                        "deliveryWindow": null,
+                        "price": 0,
+                        "deliveryChannel": "delivery",
+                        "pickupStoreInfo": {
+                            "additionalInfo": null,
+                            "address": null,
+                            "dockId": null,
+                            "friendlyName": null,
+                            "isPickupStore": false
+                        },
+                        "polygonName": null,
+                        "lockTTL": "10d",
+                        "pickupPointId": null,
+                        "transitTime": "5bd"
+                    }
+                ],
+                "shipsTo": [
+                    "BRA",
+                    "USA"
+                ],
+                "deliveryIds": [
+                    {
+                        "courierId": "1deff8f",
+                        "courierName": "Carrier",
+                        "dockId": "1",
+                        "quantity": 1,
+                        "warehouseId": "1_1",
+                        "accountCarrierName": "demostore"
+                    }
+                ],
+                "deliveryChannel": "delivery",
+                "pickupStoreInfo": {
+                    "additionalInfo": null,
+                    "address": null,
+                    "dockId": null,
+                    "friendlyName": null,
+                    "isPickupStore": false
+                },
+                "addressId": "4769955873900",
+                "polygonName": null,
+                "pickupPointId": null,
+                "transitTime": "5bd"
+            }
+        ],
+        "trackingHints": null,
+        "selectedAddresses": [
+            {
+                "addressId": "4769955873900",
+                "addressType": "residential",
+                "receiverName": "Afonso Carvalho",
+                "street": "4441 Collins Ave, Miami Beach, FL",
+                "number": null,
+                "complement": null,
+                "neighborhood": null,
+                "postalCode": "33140",
+                "city": "MIAMI BEACH",
+                "state": "FL",
+                "country": "USA",
+                "reference": null,
+                "geoCoordinates": [
+                    -80.2,
+                    25.77
+                ]
+            }
+        ]
+    },
+    "paymentData": {
+        "giftCards": [],
+        "transactions": [
+            {
+                "isActive": true,
+                "transactionId": "C2415F1DC2C946F0817BB5FB04A79691",
+                "merchantName": "DEMOSTORE",
+                "payments": [
+                    {
+                        "id": "FC0CD4CEFE5C466F8BD56E1AC5362943",
+                        "paymentSystem": "17",
+                        "paymentSystemName": "Promissory",
+                        "value": 11990,
+                        "installments": 1,
+                        "referenceValue": 11990,
+                        "cardHolder": null,
+                        "cardNumber": null,
+                        "firstDigits": null,
+                        "lastDigits": null,
+                        "cvv2": null,
+                        "expireMonth": null,
+                        "expireYear": null,
+                        "url": null,
+                        "giftCardId": null,
+                        "giftCardName": null,
+                        "giftCardCaption": null,
+                        "redemptionCode": null,
+                        "group": "promissory",
+                        "tid": null,
+                        "dueDate": null,
+                        "connectorResponses": {},
+                        "giftCardProvider": null,
+                        "giftCardAsDiscount": null,
+                        "koinUrl": null,
+                        "accountId": null,
+                        "parentAccountId": null,
+                        "bankIssuedInvoiceIdentificationNumber": null,
+                        "bankIssuedInvoiceIdentificationNumberFormatted": null,
+                        "bankIssuedInvoiceBarCodeNumber": null,
+                        "bankIssuedInvoiceBarCodeType": null,
+                        "billingAddress": null
+                    }
+                ]
+            }
+        ]
+    },
+    "packageAttachment": {
+        "packages": []
+    },
+    "sellers": [
+        {
+            "id": "1",
+            "name": "COMPANHIA BRASILEIRA DE TECNOLOGIA PARA E-COMMERCE S.A.",
+            "logo": "",
+            "fulfillmentEndpoint": "http://fulfillment.vtexcommerce.com.br/api/fulfillment?sc=1&an=demostore"
+        }
+    ],
+    "callCenterOperatorData": null,
+    "followUpEmail": "4f53b0cd6de84dc09f4281e97e324165@ct.vtex.com.br",
+    "lastMessage": null,
+    "hostname": "demostore",
+    "invoiceData": null,
+    "changesAttachment": null,
+    "openTextField": null,
+    "roundingError": 0,
+    "orderFormId": "c02fa233144647ad9078aae00aa72475",
+    "commercialConditionData": null,
+    "isCompleted": true,
+    "customData": null,
+    "storePreferencesData": {
+        "countryCode": "USA",
+        "currencyCode": "USD",
+        "currencyFormatInfo": {
+            "CurrencyDecimalDigits": 2,
+            "CurrencyDecimalSeparator": ".",
+            "CurrencyGroupSeparator": ",",
+            "CurrencyGroupSize": 3,
+            "StartsWithCurrencySymbol": true
+        },
+        "currencyLocale": 1116,
+        "currencySymbol": "$",
+        "timeZone": "Eastern Standard Time"
+    },
+    "allowCancellation": true,
+    "allowEdition": false,
+    "isCheckedIn": false,
+    "marketplace": {
+        "baseURL": "http://oms.vtexinternal.com.br/api/oms?an=demostore",
+        "isCertified": null,
+        "name": "demostore"
+    },
+    "authorizedDate": "2020-11-17T20:28:23.6964143+00:00",
+    "invoicedDate": null,
+    "cancelReason": null,
+    "itemMetadata": {
+        "Items": [
+            {
+                "Id": "58",
+                "Seller": "1",
+                "Name": "Turquoise Retro Capsule Coffee Maker - 110V",
+                "SkuName": "Turquoise Retro Capsule Coffee Maker - 110V",
+                "ProductId": "26",
+                "RefId": "73257347",
+                "Ean": null,
+                "ImageUrl": "http://demostore.vteximg.com.br/arquivos/ids/155459-55-55/img-1.jpg?v=637211136602230000",
+                "DetailUrl": "/turquoise-retro-capsule-coffee-maker/p",
+                "AssemblyOptions": []
+            }
+        ]
+    },
+    "subscriptionData": null,
+    "taxData": null,
+    "checkedInPickupPointId": null,
+    "cancellationData": null
+}
