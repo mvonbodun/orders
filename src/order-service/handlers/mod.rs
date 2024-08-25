@@ -1,11 +1,18 @@
+use std::{error::Error, sync::Arc};
+
 use axum::{
     extract::{Path, State},
     http::StatusCode,
     response::IntoResponse,
     Json,
 };
+use handlers_inner::HandlerError;
 
-use crate::{model::OrderCreateRequest, AppState};
+use crate::{
+    model::{Order, OrderCreateRequest},
+    persistence::orders_dao::OrdersDaoImpl,
+    AppState,
+};
 
 mod handlers_inner;
 
@@ -24,12 +31,10 @@ impl IntoResponse for handlers_inner::HandlerError {
 
 // Create order
 pub async fn create_order(
-    State(AppState { orders_dao }): State<AppState>,
-    Json(order_create_request): Json<OrderCreateRequest>,
-) -> Result<impl IntoResponse, impl IntoResponse> {
-    handlers_inner::create_order(order_create_request, orders_dao.as_ref())
-        .await
-        .map(Json)
+    orders_dao: Arc<OrdersDaoImpl>,
+    order_create_request: OrderCreateRequest,
+) -> Result<Order, HandlerError> {
+    handlers_inner::create_order(order_create_request, orders_dao.as_ref()).await
 }
 
 // Get order

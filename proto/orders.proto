@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package order_messages;
+
+service Order {
+    rpc CreateOrder (OrderCreateRequest) returns (OrderCreateResponse);
+}
+
+message OrderCreateRequest {
+    optional string order_ref = 1;
+    optional Address sold_to = 2;
+}
+
+message OrderCreateResponse {
+    string id = 1;
+    optional string order_ref = 2;
+    optional Address sold_to = 3;
+}
+
+message Address {
+    string id = 1;
+    optional string customer_ref = 2;
+    string name = 3;
+    string address_line1 = 4;
+    optional string address_line2 = 5;
+    optional string company = 6;
+    string city = 7;
+    optional string state_province = 8;
+    string postal_code = 9;
+    string country = 10;
+    string telephone = 11;
+    optional string email = 12;
+}

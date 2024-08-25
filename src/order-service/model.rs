@@ -84,7 +84,7 @@ impl OrderTotalsBuilder {
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct OrderCreateRequest {
     pub order_ref: Option<String>,
-    pub bill_to: Option<Address>,
+    pub sold_to: Option<Address>,
     pub order_items: Option<Vec<OrderItem>>,
 }
 
@@ -93,6 +93,7 @@ pub struct Order {
     #[serde(rename = "_id")]
     pub id: Option<String>,
     pub order_ref: Option<String>,
+    pub sold_to: Option<Address>,
     pub bill_to: Option<Address>,
     pub order_items: Option<Vec<OrderItem>>,
     pub order_totals: Option<OrderTotals>,
@@ -107,6 +108,7 @@ impl Order {
 pub struct OrderBuilder {
     id: String,
     order_ref: Option<String>,
+    sold_to: Option<Address>,
     bill_to: Option<Address>,
     order_items: Option<Vec<OrderItem>>,
     order_totals: Option<OrderTotals>,
@@ -117,6 +119,7 @@ impl OrderBuilder {
         OrderBuilder {
             id: Uuid::new_v4().to_string(),
             order_ref: None,
+            sold_to: None,
             bill_to: None,
             order_items: None,
             order_totals: None,
@@ -124,6 +127,10 @@ impl OrderBuilder {
     }
     pub fn order_ref(&mut self, order_ref: String) -> &mut Self {
         self.order_ref = Some(order_ref);
+        self
+    }
+    pub fn sold_to(&mut self, sold_to: Address) -> &mut Self {
+        self.sold_to = Some(sold_to);
         self
     }
     pub fn bill_to(&mut self, bill_to: Address) -> &mut Self {
@@ -142,6 +149,7 @@ impl OrderBuilder {
         Order {
             id: Some(self.id.clone()),
             order_ref: self.order_ref.clone(),
+            sold_to: self.sold_to.clone(),
             bill_to: self.bill_to.clone(),
             order_items: self.order_items.clone(),
             order_totals: self.order_totals.clone(),

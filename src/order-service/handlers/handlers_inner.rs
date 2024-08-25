@@ -23,8 +23,8 @@ pub async fn create_order(
     if order_create_request.order_ref.is_some() {
         order.order_ref(order_create_request.order_ref.unwrap());
     };
-    if order_create_request.bill_to.is_some() {
-        order.bill_to(order_create_request.bill_to.unwrap());
+    if order_create_request.sold_to.is_some() {
+        order.sold_to(order_create_request.sold_to.unwrap());
     };
     if order_create_request.order_items.is_some() {
         order.order_items(order_create_request.order_items.unwrap());
